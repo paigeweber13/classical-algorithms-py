@@ -1,1 +1,1 @@
-from . import dijkstras
+import dijkstras
