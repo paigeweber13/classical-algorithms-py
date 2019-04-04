@@ -27,7 +27,6 @@ class DijkstrasTest(unittest.TestCase):
                               }
 
     def test_typical_graph(self) -> None:
-        result = {}
         expected = {
             "a": (0, ['a']),
             "b": (1, ['a', 'b']),
@@ -39,7 +38,6 @@ class DijkstrasTest(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_graph_with_single_node(self):
-        result = {}
         expected = {
             "a": (0, ['a']),
         }
@@ -47,7 +45,6 @@ class DijkstrasTest(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_complex_graph(self):
-        result = {}
         expected = {
             "a": (0, ['a']),
             "b": (1, ['a', 'b']),
