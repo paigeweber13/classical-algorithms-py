@@ -25,14 +25,21 @@ def dijkstras(graph: dict, start_node: str) -> dict:
     unvisited_nodes = set()
     result = {}
     current_node = start_node
+    first_iteration = True
 
     for key in graph:
-        unvisited_nodes.add(key)
         if key == start_node:
-            result[key] = (0, [])
+            result[key] = (0, [start_node])
         else:
-            result[key] = (sys.maxsize, [])
+            result[key] = (sys.maxsize, [start_node])
+            unvisited_nodes.add(key)
 
     while len(unvisited_nodes) is not 0:
-        current_node
+        if first_iteration:
+            first_iteration = False
+        else:
+            current
+
+        for neighbor in graph[current_node]:
+
         pass
